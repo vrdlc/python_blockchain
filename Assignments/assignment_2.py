@@ -6,10 +6,20 @@
 
 
 name_list = ['Jim', 'Jan', 'Claire', 'Claire', 'Manacle', 'Art', 'Nana', 'Bon']
+five_char = []
 
 def name_len():
+    # 'name' is the index point
     for name in range(len(name_list)):
-        print(name_list[name])
+        # name_list[name] is the name in the array at that index point
+        if len(name_list[name]) >= 5:
+            # This adds the a name > 5 characters to the array
+            five_char.append(name_list[name])
+        else:
+            continue
+
+    # Remember to remove an indent to remove something from a loop but to keep it in the function. Python has no dedicated closing characters!
+    print(five_char)
 
 
 name_len()
